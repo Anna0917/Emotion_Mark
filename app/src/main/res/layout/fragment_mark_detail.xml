@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mark_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/mark_date_label"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_scale_label"
+            app:layout_constraintBottom_toTopOf="@+id/mark_rating"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mark_date" />
+
+
+        <RatingBar
+            android:id="@+id/mark_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:numStars="10"
+            android:stepSize="1.0"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_emotion_label"
+            app:layout_constraintBottom_toTopOf="@+id/mark_emotion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mark_rating" />
+
+        <EditText
+            android:id="@+id/mark_emotion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:gravity="bottom"
+            android:hint="@string/mark_description_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_description_label"
+            app:layout_constraintBottom_toTopOf="@+id/mark_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mark_emotion" />
+
+        <EditText
+            android:id="@+id/mark_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:gravity="bottom"
+            android:hint="@string/mark_description_hint"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_save_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mark_description" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

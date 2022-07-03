@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Emotion Mark</string>
+
+    <string name="mark_scale_label">Оценка эмоционального состояния</string>
+    <string name="mark_emotion_label">Какую эмоцию вы испытываете сейчас?</string>
+    <string name="mark_description_label">С чем связанна эта эмоция?</string>
+    <string name="mark_description_hint">Введите текст здесь…</string>
+    <string name="mark_date_label">31.05.2022</string>
+    <string name="list_item_mark_date">Дата</string>
+    <string name="list_item_mark_emotion">Эмоциональное состояние</string>
+    <string name="list_item_mark_rating">Оценка</string>
+    <string name="mark_save_button">Сохранить</string>
+
+    <string name="correct_toast">Данные успешно сохранены</string>
+    <string name="incorrect_toast">Не удалось сохранить данные</string>
+
+    <string name="new_mark">Добавить отметку</string>
+    <string name="first_mark">Что вы чувствуете сейчас?</string>
+
+
+</resources>
